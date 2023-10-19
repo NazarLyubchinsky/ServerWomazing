@@ -8,7 +8,7 @@ const middlewares = jsonServer.defaults()
 const port = process.env.PORT || 4000
 
 
-
+server.db = router.db
 server.use(auth)
 server.use(middlewares)
 server.use(router)
